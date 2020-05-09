@@ -10,7 +10,6 @@
     "build": "NODE_ENV=production webpack",
     "dev": "set \"NODE_ENV=development\"  && concurrently \"node server/server.js\" \"webpack-dev-server --open\""
   },
-
   "repository": {
     "type": "git",
     "url": "git+https://github.com/fansfansfansfans/greenThumb.git"
@@ -26,7 +25,8 @@
     "path": "^0.12.7",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-redux": "^7.2.0"
+    "react-redux": "^7.2.0",
+    "redux": "^4.0.5"
   },
   "devDependencies": {
     "@babel/core": "^7.9.6",
