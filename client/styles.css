@@ -1,0 +1,95 @@
+body {
+  font-family: courier;
+  background-color: rgb(132, 187, 139);
+  margin: 0
+}
+
+img {
+  height: 500px; 
+}
+
+.fav-plant {
+  height: 300px;
+}
+
+p {
+  font-size: .9em;
+}
+
+/* flex box directions */
+.container { 
+  display: flex; 
+  flex-direction: column;
+}
+
+.frontnav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(134, 156, 134);
+  padding: 5px 20px;
+}
+
+.main-query-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.query-selections {
+  /* border: 1px solid black; */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Float two columns side by side */
+.column-card {
+  float: left;
+  width: 50%;
+  padding: 0 50px;
+  margin-top: 20px
+}
+
+/* Remove extra left and right margins, due to padding in columns */
+.row-cards {
+  margin: 0 -5px;
+}
+
+/* Clear floats after the columns */
+.row-cards:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the counter cards */
+.plant-card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+  border-radius: 5px;
+  padding: 16px 50px;
+  margin: 0 50;
+  /* text-align: left; */
+  background-color: #f1f1f1;
+}
+
+.plant-card-header {
+  text-align: center
+}
+
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column-card {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}

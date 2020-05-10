@@ -12,46 +12,67 @@
 import React, { Component } from 'react';
 
 class Queries extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      queryResults: [
-      {plant_name: "blackwood", drought_tolerance: "high", bloom_period: "winter"},
-      {plant_name: "spring onion", drought_tolerance: "low", bloom_period: "spring"}]
-    }
-  }
 
-  // function that will fetch request --> componentDidMount
-
-  // componentDidMount () {
-  //   // console.log('mounting')
-  //   fetch('https://curriculum-api.codesmith.io/messages')
-  //     .then(res => res.json())
-  //     .then(res => this.setState({ queryResults: res }))
-  //     .then(console.log('data fetched!'))
-  // }
-
-  
-  
   render() {
-    // for each object in the array, 
-    const queryResults = [];
-    // this.state.queryResults.forEach(query => {
-    //   queryResults.push(query)
-    // })
-    this.state.queryResults.forEach(query => {
-      queryResults.push(<p>{query["plant_name"]}</p>)
-    })
-    // console.log('queryResults', queryResults)
 
-    return <div>
-      { queryResults }
-    </div>
+    return (
+      <div>
+      <section className="main-query-section">
+          <img src="https://i.imgur.com/0dok2AA.png" />
+      </section>
+
+      <section className="query-selections">
+        <h2>Choose Your Query</h2>
+      </section>
+      <div className="query-selections">
+          <form action="/api/query">
+
+            <select id="query-params" name="query-params">
+              <option value="drought_tolerance">Water Retention</option>
+              <option value="resprout_ability">Able to Regrow</option>
+              <option value="growth_rate">Growth Rate</option>
+              <option value="lifespan">Lifespan</option>
+              <option value="bloom_period">Bloom Period</option>
+            </select>
+            <input type="submit" value="Submit" />
+          </form>
+      </div>
+  
+      <div className="row-cards">
+        <div className="column-card">
+          <div className="plant-card">
+            <div className="plant-card-header">
+              <h3>plant name</h3>
+              <img className="fav-plant" src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/best-annual-flowers-sunflowers-1521752647.jpg" />
+            </div>
+            <hr />
+            <strong>Details</strong>
+              <p>drought_tolerance</p>
+              <p>resprout_ability</p>
+              <p>growth_rate</p>
+              <p>lifespan</p>
+              <p>bloom_period</p>
+          </div>
+        </div>
+        <div className="column-card">
+          <div className="plant-card">
+            <div className="plant-card-header">
+              <h3>plant name</h3>
+              <img className="fav-plant" src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/best-annual-flowers-sunflowers-1521752647.jpg" />
+            </div>
+            <hr />
+            <strong>Details</strong>
+              <p>drought_tolerance</p>
+              <p>resprout_ability</p>
+              <p>growth_rate</p>
+              <p>lifespan</p>
+              <p>bloom_period</p>
+          </div>
+        </div>
+      </div>
+      </div>
+    )
   }
-
-
-
-
 }
 
 export default Queries;
