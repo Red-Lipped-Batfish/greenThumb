@@ -4,7 +4,7 @@ const plantController = require('../controllers/plantController');
 const router = express.Router();
 
 router.get('/', plantController.getData, (req, res) => {
-  res.send('Routers are working');
+    return res.status(200).send('Successful update');
 });
 
 module.exports = router;
