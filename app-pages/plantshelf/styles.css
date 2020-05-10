@@ -6,14 +6,15 @@ body {
 
 img {
   height: 500px; 
-}
-
-.fav-plant {
-  height: 300px;
+  /* border: 1px double burlywood */
 }
 
 p {
   font-size: .9em;
+}
+
+.fav-plant {
+  height: 200px;
 }
 
 /* flex box directions */
@@ -31,6 +32,15 @@ p {
   padding: 5px 20px;
 }
 
+
+/* ul#nav li a {
+
+} */
+
+.header {
+  text-align: center;
+}
+
 .main-query-section {
   display: flex;
   flex-direction: row;
@@ -46,14 +56,10 @@ p {
   align-items: center;
 }
 
-* {
-  box-sizing: border-box;
-}
-
-/* Float two columns side by side */
+/* Float 3 columns side by side */
 .column-card {
   float: left;
-  width: 50%;
+  width: 27%;
   padding: 0 50px;
   margin-top: 20px
 }
@@ -61,6 +67,7 @@ p {
 /* Remove extra left and right margins, due to padding in columns */
 .row-cards {
   margin: 0 -5px;
+  align-items: center;
 }
 
 /* Clear floats after the columns */
@@ -83,7 +90,6 @@ p {
 .plant-card-header {
   text-align: center
 }
-
 
 /* Responsive columns */
 @media screen and (max-width: 600px) {
