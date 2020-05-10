@@ -13,7 +13,7 @@ import React, { Component } from 'react';
 import Queries from './components/Queries.jsx';
 import NavBar from './components/NavBar.jsx';
 // import Homepage from './components/Homepage.jsx';
-// import Profile from './components/Profile.jsx';
+import PlantShelf from './components/PlantShelf.jsx';
 // import store from './store.js';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
@@ -27,7 +27,7 @@ class App extends Component {
           <Switch>
             {/* <Route exact path="/" component={ Homepage } /> */}
             <Route exact path="/query" component={ Queries } />
-            {/* <Route exact path="/plantshelf" component={ PlantShelf } /> */}
+            <Route exact path="/plantshelf" component={ PlantShelf } />
             {/* <Route exact path="/profile" component={ Profile } /> */}
           </Switch>
         </div>

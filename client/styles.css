@@ -8,12 +8,20 @@ img {
   height: 500px; 
 }
 
-.fav-plant {
+.query-plant {
   height: 300px;
+}
+
+.fav-plant {
+  height: 200px;
 }
 
 p {
   font-size: .9em;
+}
+
+ul {
+  list-style: none;
 }
 
 /* flex box directions */
@@ -28,7 +36,8 @@ p {
   justify-content: space-around;
   align-items: center;
   background-color: rgb(134, 156, 134);
-  padding: 5px 20px;
+  padding: 10px 20px;
+  margin-top: 0px
 }
 
 .main-query-section {
@@ -38,8 +47,9 @@ p {
   align-items: center;
 }
 
-.query-selections {
+.query-selections, .title {
   /* border: 1px solid black; */
+  color: rgb(32, 43, 12);
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -51,15 +61,32 @@ p {
 }
 
 /* Float two columns side by side */
-.column-card {
+.column-card-query {
   float: left;
   width: 50%;
   padding: 0 50px;
   margin-top: 20px
 }
 
+/* Float 3 columns side by side */
+.column-card-fav {
+  float: left;
+  width: 27%;
+  padding: 0 50px;
+  margin-top: 20px
+}
+
+
+.row-cards-query {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 -5px;
+}
+
 /* Remove extra left and right margins, due to padding in columns */
-.row-cards {
+.row-cards-fav {
+  display: flex;
+  justify-content: space-around;
   margin: 0 -5px;
 }
 
@@ -87,7 +114,7 @@ p {
 
 /* Responsive columns */
 @media screen and (max-width: 600px) {
-  .column-card {
+  .column-card-query, .column-card-fav {
     width: 100%;
     display: block;
     margin-bottom: 20px;

@@ -21,7 +21,7 @@ class Queries extends Component {
           <img src="https://i.imgur.com/0dok2AA.png" />
       </section>
 
-      <section className="query-selections">
+      <section className="title">
         <h2>Choose Your Query</h2>
       </section>
       <div className="query-selections">
@@ -38,12 +38,12 @@ class Queries extends Component {
           </form>
       </div>
   
-      <div className="row-cards">
-        <div className="column-card">
+      <div className="row-cards-query">
+        <div className="column-card-query">
           <div className="plant-card">
             <div className="plant-card-header">
               <h3>plant name</h3>
-              <img className="fav-plant" src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/best-annual-flowers-sunflowers-1521752647.jpg" />
+              <img className="query-plant" src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/best-annual-flowers-sunflowers-1521752647.jpg" />
             </div>
             <hr />
             <strong>Details</strong>
@@ -54,11 +54,11 @@ class Queries extends Component {
               <p>bloom_period</p>
           </div>
         </div>
-        <div className="column-card">
+        <div className="column-card-query">
           <div className="plant-card">
             <div className="plant-card-header">
               <h3>plant name</h3>
-              <img className="fav-plant" src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/best-annual-flowers-sunflowers-1521752647.jpg" />
+              <img className="query-plant" src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/best-annual-flowers-sunflowers-1521752647.jpg" />
             </div>
             <hr />
             <strong>Details</strong>
