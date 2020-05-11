@@ -106,7 +106,8 @@ async function getPlantsInfo(){
     plantController.findAPlant = (req, res) => {
         Plant.findOne(req.query, (err, plant) => {
             if(err) return res.status(422);
-            res.status(200).json(plant);
+            const aPlant = plant.slice(0,100)
+            res.status(200).json(aplant);
         })
     }
     // find all potential plants
@@ -114,7 +115,8 @@ async function getPlantsInfo(){
         Plant.find(req.query, (err, potentialPlants) => {
             if (err) return res.status(422);
             // console.log('potentialPlants resp: ', potentialPlants)
-            res.status(200).json(potentialPlants);
+            const plants = potentialPlants.slice(0,100);
+            res.status(200).json(Plants);
         })
     }
     
