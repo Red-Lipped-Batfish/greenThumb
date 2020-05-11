@@ -35,6 +35,23 @@ a:active, a:hover {
   margin-top: 0px
 }
 
+.navlink {
+  padding-right: 25px;
+}
+
+.login {
+  padding: 5px;
+}
+
+
+.rightnav {
+  justify-content: flex-end;
+}
+
+.rightnav {
+  justify-content: flex-start;
+}
+
 
 /* query page styling */
 img {
@@ -143,22 +160,6 @@ ul {
 
 
 /* sign up page styling */
-
-.navlink {
-  padding-right: 25px;
-}
-
-.login {
-  padding: 5px;
-}
-
-
-.rightnav {
-  justify-content: flex-end;
-
-}
-
-
 .vertical-center-body-container{
   display: flex;
   justify-content: center;

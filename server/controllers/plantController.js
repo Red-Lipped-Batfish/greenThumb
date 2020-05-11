@@ -110,11 +110,10 @@ async function getPlantsInfo(){
         })
     }
     // find all potential plants
-    plantController.findPotentialPlants = (req, res) => {
-        console.log('findPotentialPlants: req.query: ', req.query)
+    plantController.findManyPlants = (req, res) => {
         Plant.find(req.query, (err, potentialPlants) => {
             if (err) return res.status(422);
-            console.log('potentialPlants resp: ', potentialPlants)
+            // console.log('potentialPlants resp: ', potentialPlants)
             res.status(200).json(potentialPlants);
         })
     }
