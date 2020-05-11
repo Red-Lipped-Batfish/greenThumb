@@ -19,7 +19,7 @@
         <nav className="leftnav">
           <span className="navlink"><Link to="/">GREEN THUMB</Link></span>
           <span className="navlink"><Link to="/signup">Sign Up</Link></span>
-          <span className="navlink"><Link to="/query">Make a query</Link></span>
+          <span className="navlink"><Link to="/query">Find Your Friendly Plant</Link></span>
           <span className="navlink"><Link to="/plantshelf">Plantshelf</Link></span>
         </nav>
         <nav className="rightnav">

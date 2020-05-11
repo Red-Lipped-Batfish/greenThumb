@@ -18,21 +18,32 @@ class Queries extends Component {
     return (
       <div>
       <section className="main-query-section">
-          <img src="https://i.imgur.com/0dok2AA.png" />
+          {/* <img src="https://i.imgur.com/0dok2AA.png" /> */}
+          <img src="https://i.ibb.co/G05vqqP/a011787e63ea6f6b2d1879b94ef2ca31-removebg-preview.png" />
       </section>
-
       <section className="title">
-        <h2>Choose Your Query</h2>
+        <h2>Select Your Query</h2>
       </section>
       <div className="query-selections">
           <form action="/api/query">
 
             <select id="query-params" name="query-params">
-              <option value="drought_tolerance">Water Retention</option>
-              <option value="resprout_ability">Able to Regrow</option>
-              <option value="growth_rate">Growth Rate</option>
-              <option value="lifespan">Lifespan</option>
-              <option value="bloom_period">Bloom Period</option>
+              <option value="" disabled>Water Retention</option>
+                <option value="drought_tolerance">- High</option>
+                <option value="drought_tolerance">- Medium</option>
+                <option value="drought_tolerance">- Low</option>
+              <option value="" disable>Able to Regrow</option>
+                <option value="resprout_ability">- True</option>
+                <option value="resprout_ability">- False</option>
+              <option value="" disabled>Growth Rate</option>
+                <option value="growth_rate">- Fast</option>
+                <option value="growth_rate">- Slow</option>
+              <option value="" disabled>Lifespan</option>
+                <option value="lifespan">- Annual</option>
+                <option value="lifespan">- Biannual</option>
+              <option value="" disabled>Bloom Period</option>
+                <option value="bloom_period">- Early Spring</option>
+                <option value="bloom_period">- Late Spring</option>
             </select>
             <input type="submit" value="Submit" />
           </form>

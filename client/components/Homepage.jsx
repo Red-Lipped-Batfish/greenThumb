@@ -27,7 +27,7 @@
             <p></p>
             After searching for a plant you're interested in caring for, sign up to save them in your plant shelf! You'll get to see all the plants you own and you'll be able to save notes about your experience caring for them. What are you waiting for? Check it out!
             <p></p>
-            <center><button className="homepage-btn">Make a Query</button></center>
+            <center><button className="homepage-btn">Find Your Friendly Plant</button></center>
           </div>     
         </div> 
       </div>

@@ -22,7 +22,8 @@ class PlantShelf extends Component {
         <h1>Red-lipped Batfish's Plant Shelf</h1>
       </section>
       <section className="main-query-section">
-          <img src="https://i.ibb.co/gmys07P/WLK3-WGs-removebg-preview-1.png" />
+          {/* <img src="https://i.ibb.co/gmys07P/WLK3-WGs-removebg-preview-1.png" /> */}
+          <img src="https://i.ibb.co/gFRSrJ5/NG54-01-removebg-preview.png"/>
       </section>
    
       <section className="title">
