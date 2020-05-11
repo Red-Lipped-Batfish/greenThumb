@@ -19,6 +19,11 @@ a:active, a:hover {
   text-decoration: none;
 }
 
+label {
+  font-size: .8em;
+  padding: 0 5px 0 15px;
+}
+
 /* main container setup for container and navigation */
 .container { 
   display: flex; 
@@ -35,11 +40,10 @@ a:active, a:hover {
   margin-top: 0px
 }
 
-
 /* query page styling */
-img {
+/* img {
   height: 500px; 
-}
+} */
 
 .query-plant {
   height: 300px;
@@ -89,8 +93,8 @@ ul {
 /* Float 3 columns side by side */
 .column-card-fav {
   float: left;
-  width: 27%;
-  padding: 0 50px;
+  width: 30%;
+  padding: 0 30px;
   margin-top: 20px
 }
 

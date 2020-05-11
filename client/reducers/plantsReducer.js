@@ -28,6 +28,7 @@ const fetchData = () => {
   // const lifespan = document.querySelector("#resprout-ability").value;
   // const bloomPeriod = document.querySelector("#bloom-period").value;
   const url = `/api/getManyPlants?drought_tolerance=${waterRetention}&resprout_ability=${resproutAbility}`;
+  // growth_rate=${growthRate}&bloom_period=${bloomPeriod}
   console.log('url is: ', url)
   fetch(url)
     .then(res => res.json())

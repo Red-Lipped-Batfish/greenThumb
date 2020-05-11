@@ -40,39 +40,50 @@ class Queries extends Component {
       <div>
       <section className="main-query-section">
           {/* <img src="https://i.imgur.com/0dok2AA.png" /> */}
-          <img src="https://i.ibb.co/G05vqqP/a011787e63ea6f6b2d1879b94ef2ca31-removebg-preview.png" />
+          {/* <img src="https://i.ibb.co/G05vqqP/a011787e63ea6f6b2d1879b94ef2ca31-removebg-preview.png" /> */}
+          <img src="https://i.ibb.co/2cQQMjz/a011787e63ea6f6b2d1879b94ef2ca31-removebg-preview-1.png" />
       </section>
       <section className="title">
-        <h2>Select Your Query</h2>
+        <h2>Find Your Perfect Plant</h2>
       </section>
       <div className="query-selections">
           <div>
-
+            <label htmlFor="water-retention">Water Retention</label>
             <select id="water-retention">
               <option value="" disabled>Water Retention</option>
-                <option value="High">- High</option>
-                <option value="Medium">- Medium</option>
-                <option value="Low">- Low</option>
+                <option value="High">High</option>
+                <option value="Medium">Medium</option>
+                <option value="Low">Low</option>
             </select>
+            <label htmlFor="resprout-ability">Resprout Ability</label>
             <select id="resprout-ability">
-              <option value="" disabled>Able to Regrow</option>
-                <option value="true">- True</option>
-                <option value="false">- False</option>
+              <option value="" disabled>Resprout Ability</option>
+                <option value="true">True</option>
+                <option value="false">False</option>
             </select>
-            {/* <select id="growth-rate">
+            {/* <label for="growth-rate">Growth Rate</label>
+            <select id="growth-rate">
               <option value="" disabled>Growth Rate</option>
-                <option value="fast">- Fast</option>
-                <option value="slow">- Slow</option>
+                <option value="fast">Fast</option>
+                <option value="slow">Slow</option>
             </select>
+            <label for="lifespan">Lifespan</label>
             <select id="lifespan">
               <option value="" disabled>Lifespan</option>
-                <option value="lifespan">- Annual</option>
-                <option value="lifespan">- Biannual</option>
+                <option value="lifespan">Annual</option>
+                <option value="lifespan">Biannual</option>
             </select>
+            <label for="bloom-period">Bloom Period</label>
             <select id="bloom-period">
               <option value="" disabled>Bloom Period</option>
-                <option value="bloom_period">- Early Spring</option>
-                <option value="bloom_period">- Late Spring</option>
+                <option value="bloom_period">Early Spring</option>
+                <option value="bloom_period">Late Spring</option>
+                <option value="bloom_period">Early Summer</option>
+                <option value="bloom_period">Late Summer</option>
+                <option value="bloom_period">Early Fall</option>
+                <option value="bloom_period">Late Fall</option>
+                <option value="bloom_period">Early Winter</option>
+                <option value="bloom_period">Late Winter</option>
             </select> */}
             <input type="submit" value="Submit" onClick={() => this.props.submitSelection()} />
           </div>
