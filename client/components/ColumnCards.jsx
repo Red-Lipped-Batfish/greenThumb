@@ -26,7 +26,7 @@ const ColumnCards = (props) => {
             </div>
             <hr />
             <strong>Details</strong>
-              <p>drought_tolerance</p>
+              <p>Seed period begins: </p>
               <p>resprout_ability</p>
               <p>growth_rate</p>
               <p>lifespan</p>
