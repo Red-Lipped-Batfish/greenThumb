@@ -1,12 +1,20 @@
 body {
-  font-family: courier;
-  background-color: rgb(132, 187, 139);
-  margin: 0
+  margin: 0px;
+  background-color: burlywood;
+  font-family: 'Muli', sans-serif;
 }
 
+/* link decorations */
+a:link, a:visited {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
 
-p {
-  font-size: .8em;
+a:active, a:hover {
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
 }
 
 /* flex box directions */
@@ -18,46 +26,60 @@ p {
 .frontnav {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   background-color: rgb(134, 156, 134);
-  padding: 5px 20px;
+  padding: 20px;
 }
 
-.main-query-section {
+.navlink {
+  padding-right: 25px;
+}
+
+.login {
+  padding: 5px;
+}
+
+.leftnav {
+  /* justify-content: flex-start; */
+}
+
+.rightnav {
+  justify-content: flex-end;
+
+}
+
+h1 {
+  font-size: initial;
+  line-height: 10%;
+}
+
+.main-body{
   display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
+  height: 100vh;
+
 }
 
-.query-selections {
-  /* border: 1px solid black; */
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+.inner-body{
+  align-self: center;
+  width: 40%;
+  padding: 20px;
+  border: 1px solid rgb(134, 156, 134);
+  background-color: #F6F6F8;
+  background-image: url('./signup_leaf.jpg');
+  background-repeat: no-repeat;
+  background-position: 220%;
+  background-size: 90%;
 }
 
-* {
-  box-sizing: border-box;
+.inner-body-center {
+  text-align: left;
 }
 
-/* Float four columns side by side */
-.column-card {
-  float: left;
-  width: 25%;
-  padding: 0 50px;
-}
-
-/* Remove extra left and right margins, due to padding in columns */
-.row-cards {margin: 0 -5px;}
-
-/* Clear floats after the columns */
-.row-cards:after {
-  content: "";
-  display: table;
-  clear: both;
+.signup {
+  padding: 5px;
 }
 
 
