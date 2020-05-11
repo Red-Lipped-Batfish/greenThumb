@@ -12,6 +12,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { submitSelection } from '../actions/actions';
+import { RowQueries } from './RowQueries.jsx';
 
 
 const mapStateToProps = state =>({
@@ -21,12 +22,37 @@ const mapStateToProps = state =>({
 
 const mapDispatchToProps = dispatch => ({
   // add dispatchers here
-  submitSelection: () => dispatch(submitSelection())
+  submitSelection: (data) => {
+    // console.log('Queries: mapDispatchToProps, submitSelection, data[0] - ', data[0])
+    dispatch(submitSelection(data))
+  }
 })
+
+
 
 class Queries extends Component {
 
   render() {
+    const fetchData = () => {
+      const waterRetention = document.querySelector("#water-retention").value;
+      // console.log('value of waterRetention is: ',waterRetention);
+      const resproutAbility = document.querySelector("#resprout-ability").value;
+      // console.log('value of resproutAbility is: ', resproutAbility);
+      // const growthRate = document.querySelector("#growth-rate").value;
+      // const lifespan = document.querySelector("#resprout-ability").value;
+      // const bloomPeriod = document.querySelector("#bloom-period").value;
+      const url = `/api/getManyPlants?drought_tolerance=${waterRetention}&resprout_ability=${resproutAbility}`;
+      console.log('url is: ', url)
+      fetch(url)
+        .then(res => res.json())
+        .then(data => {
+          console.log('Queries: fetch(url)  : ', data);
+          this.props.submitSelection(data)
+          return;
+        })
+    }
+
+    
     // separate by 2
     const rowQueries = [];
     for (let i = 0; i < this.props.listofPlants.length; i+2) {
@@ -74,7 +100,7 @@ class Queries extends Component {
                 <option value="bloom_period">- Early Spring</option>
                 <option value="bloom_period">- Late Spring</option>
             </select> */}
-            <input type="submit" value="Submit" onClick={() => this.props.submitSelection()} />
+            <input type="submit" value="Submit" onClick={() => fetchData()} />
           </div>
       </div>  
   
