@@ -12,6 +12,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { submitSelection } from '../actions/actions';
+import { RowQueries } from './RowQueries';
 
 
 const mapStateToProps = state =>({
@@ -61,19 +62,19 @@ class Queries extends Component {
                 <option value="true">True</option>
                 <option value="false">False</option>
             </select>
-            {/* <label for="growth-rate">Growth Rate</label>
+            {/* <label htmlFor="growth-rate">Growth Rate</label>
             <select id="growth-rate">
               <option value="" disabled>Growth Rate</option>
                 <option value="fast">Fast</option>
                 <option value="slow">Slow</option>
             </select>
-            <label for="lifespan">Lifespan</label>
+            <label htmlFor="lifespan">Lifespan</label>
             <select id="lifespan">
               <option value="" disabled>Lifespan</option>
                 <option value="lifespan">Annual</option>
                 <option value="lifespan">Biannual</option>
             </select>
-            <label for="bloom-period">Bloom Period</label>
+            <label htmlFor="bloom-period">Bloom Period</label>
             <select id="bloom-period">
               <option value="" disabled>Bloom Period</option>
                 <option value="bloom_period">Early Spring</option>
