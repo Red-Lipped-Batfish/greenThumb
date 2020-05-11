@@ -10,10 +10,31 @@
  */
 
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
+import { submitSelection } from '../actions/actions';
+
+
+const mapStateToProps = state =>({
+  listofPlants: state.plantsReducer.arrayOfPlants
+  // state here
+})
+
+const mapDispatchToProps = dispatch => ({
+  // add dispatchers here
+  submitSelection: () => dispatch(submitSelection())
+})
 
 class Queries extends Component {
 
   render() {
+    // separate by 2
+    const rowQueries = [];
+    for (let i = 0; i < this.props.listofPlants.length; i+2) {
+      const individualRow = [];
+      individualRow.push(this.props.listofPlants[i])
+      individualRow.push(this.props.listofPlants[i+1])
+      rowQueries.push(<RowQueries columnCards={individualRow} />);
+    }
 
     return (
       <div>
@@ -25,31 +46,44 @@ class Queries extends Component {
         <h2>Select Your Query</h2>
       </section>
       <div className="query-selections">
-          <form action="/api/query">
+          <div>
 
-            <select id="query-params" name="query-params">
+            <select id="water-retention">
               <option value="" disabled>Water Retention</option>
-                <option value="drought_tolerance">- High</option>
-                <option value="drought_tolerance">- Medium</option>
-                <option value="drought_tolerance">- Low</option>
-              <option value="" disable>Able to Regrow</option>
-                <option value="resprout_ability">- True</option>
-                <option value="resprout_ability">- False</option>
+                <option value="High">- High</option>
+                <option value="Medium">- Medium</option>
+                <option value="Low">- Low</option>
+            </select>
+            <select id="resprout-ability">
+              <option value="" disabled>Able to Regrow</option>
+                <option value="true">- True</option>
+                <option value="false">- False</option>
+            </select>
+            {/* <select id="growth-rate">
               <option value="" disabled>Growth Rate</option>
-                <option value="growth_rate">- Fast</option>
-                <option value="growth_rate">- Slow</option>
+                <option value="fast">- Fast</option>
+                <option value="slow">- Slow</option>
+            </select>
+            <select id="lifespan">
               <option value="" disabled>Lifespan</option>
                 <option value="lifespan">- Annual</option>
                 <option value="lifespan">- Biannual</option>
+            </select>
+            <select id="bloom-period">
               <option value="" disabled>Bloom Period</option>
                 <option value="bloom_period">- Early Spring</option>
                 <option value="bloom_period">- Late Spring</option>
-            </select>
-            <input type="submit" value="Submit" />
-          </form>
-      </div>
+            </select> */}
+            <input type="submit" value="Submit" onClick={() => this.props.submitSelection()} />
+          </div>
+      </div>  
   
-      <div className="row-cards-query">
+      
+      {rowQueries}
+
+
+
+      {/* <div className="row-cards-query">
         <div className="column-card-query">
           <div className="plant-card">
             <div className="plant-card-header">
@@ -80,10 +114,10 @@ class Queries extends Component {
               <p>bloom_period</p>
           </div>
         </div>
-      </div>
+      </div> */}
       </div>
     )
   }
 }
 
-export default Queries;
+export default connect(mapStateToProps, mapDispatchToProps)(Queries);
