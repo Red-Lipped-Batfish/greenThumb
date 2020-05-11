@@ -10,38 +10,33 @@
  */
 
 import React, { Component } from 'react';
-import { connect } from 'react-redux';
+import ColumnDetails from './ColumnCards.jsx';
 
 
 const ColumnCards = (props) => {
   
   const arrayOfColumnCards = []
-  props.columnCards.forEach(el => arrayOfColumnCards.push(
-    <div className="column-card-query">
-    <div className="plant-card">
-      <div className="plant-card-header">
-        <h3>{el["common_name"]}</h3>
-        <img className="query-plant" src={el["image_url"]} />
-      </div>
-      <hr />
-      <strong>Details</strong>
-        <p>Seed period begins: {el["seed_period_begin"]}</p>
-        <p>Seed period ends: {el["seed_period_end"]}</p>
-        <p>Moisture use: {el["moisture_use"]}</p>
-        <p>Drought tolerance:  {el["drought_tolerance"]}</p>
-        <p>ph maximum: {el["ph_maximum"]}</p>
-        <p>ph minimum: {el["ph_minimum"]}</p>
-        <p>Resprout ability: {el["resprout_ability"]}</p>
-        <p>Shade tolerance: {el["shade_tolerance"]}</p>
-        <p>Bloom period: {el["bloom_period"]}</p>
-        <p>Commercial availability: {el["commercial_availability"]}</p>
-        <p>Growth rate: {el["growth_rate"]}</p>
-        <p>lifespan: {el["lifespan"]}</p>
-        <p>Height at maturity: {el["mature_height"]}</p>
-    </div>
-  </div>
+  console.log('props columnCards: ', props.columnCards)
+  props.columnCards.forEach((el, i) => {
+    const uniqueKey = 'card' + i;
+    arrayOfColumnCards.push(
+    <ColumnDetails key={uniqueKey} id={uniqueKey} keycardDetails={props.columnCards} />)
+    }
+ )
 
-  ))
+
+return (
+
+  { arrayOfColumnCards }
+
+  )
+  
+}
+
+export default ColumnCards;
+
+
+
 
   // for (let i = 0; i < props.columnCards.length; i++) {
   //   columnCards.push(
@@ -70,12 +65,3 @@ const ColumnCards = (props) => {
   //       </div>
   //   )
   // }
-
-return (
-
-  { columnCards }
-  )
-  
-}
-
-export default RowQueries;

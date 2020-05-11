@@ -40,6 +40,24 @@ label {
   margin-top: 0px
 }
 
+.navlink {
+  padding-right: 25px;
+}
+
+.login {
+  padding: 5px;
+}
+
+
+.rightnav {
+  justify-content: flex-end;
+}
+
+.leftnav {
+  justify-content: flex-start;
+}
+
+
 /* query page styling */
 /* img {
   height: 500px; 
@@ -147,22 +165,6 @@ ul {
 
 
 /* sign up page styling */
-
-.navlink {
-  padding-right: 25px;
-}
-
-.login {
-  padding: 5px;
-}
-
-
-.rightnav {
-  justify-content: flex-end;
-
-}
-
-
 .vertical-center-body-container{
   display: flex;
   justify-content: center;
