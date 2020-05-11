@@ -1,0 +1,213 @@
+body {
+  font-family: 'Muli', sans-serif;
+  /* font-family: courier; */
+  /* background-color: rgb(132, 187, 139); */
+  background-color: burlywood;
+  margin: 0
+}
+
+/* link decorations */
+a:link, a:visited {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a:active, a:hover {
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* main container setup for container and navigation */
+.container { 
+  display: flex; 
+  flex-direction: column;
+}
+
+.frontnav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /* align-items: center; */
+  background-color: rgb(134, 156, 134);
+  padding: 10px 20px;
+  margin-top: 0px
+}
+
+
+/* query page styling */
+img {
+  height: 500px; 
+}
+
+.query-plant {
+  height: 300px;
+}
+
+.fav-plant {
+  height: 200px;
+}
+
+p {
+  font-size: .9em;
+}
+
+ul {
+  list-style: none;
+}
+
+
+.main-query-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.query-selections, .title {
+  /* border: 1px solid black; */
+  color: rgb(32, 43, 12);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Float two columns side by side */
+.column-card-query {
+  float: left;
+  width: 50%;
+  padding: 0 50px;
+  margin-top: 20px
+}
+
+/* Float 3 columns side by side */
+.column-card-fav {
+  float: left;
+  width: 27%;
+  padding: 0 50px;
+  margin-top: 20px
+}
+
+
+.row-cards-query {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 -5px;
+}
+
+/* Remove extra left and right margins, due to padding in columns */
+.row-cards-fav {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 -5px;
+}
+
+/* Clear floats after the columns */
+.row-cards:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the counter cards */
+.plant-card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+  border-radius: 5px;
+  padding: 16px 50px;
+  margin: 0 50;
+  /* text-align: left; */
+  background-color: #f1f1f1;
+}
+
+.plant-card-header {
+  text-align: center
+}
+
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column-card-query, .column-card-fav {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+
+
+
+/* sign up page styling */
+
+.navlink {
+  padding-right: 25px;
+}
+
+.login {
+  padding: 5px;
+}
+
+
+.rightnav {
+  justify-content: flex-end;
+
+}
+
+
+.vertical-center-body-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+}
+
+.signup-inner-body{
+  align-self: center;
+  width: 40%;
+  padding: 20px;
+  border: 1px solid rgb(134, 156, 134);
+  border-radius: 5px;
+  background-color: #F6F6F8;
+  background-image: url('https://i.imgur.com/zQ2GjQ8.jpg');
+  background-repeat: no-repeat;
+  background-position: 220%;
+  background-size: 90%;
+}
+
+
+.signup {
+  padding: 5px;
+}
+
+
+/*  Homepage styling  */
+.homepage-inner-body-container{
+  display: flex;
+  border-radius: 5px;
+  border: 1px solid rgb(134, 156, 134);
+  width: 70%;
+}
+
+.homepage-inner-body-landing-img{
+  background-image: url('https://i.imgur.com/14ZAa8W.jpg');
+  background-position-y: 70%;
+  height: 500px;
+  width: 50%;
+}
+
+.homepage-inner-body-text{
+  padding: 50px;
+  width: 50%;
+  border-radius: 5px;
+  background-color: white;
+}
+
+.homepage-btn{
+  background-color: rgb(134, 156, 134);
+}
