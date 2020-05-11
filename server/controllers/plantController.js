@@ -115,7 +115,7 @@ async function getPlantsInfo(){
             if (err) return res.status(422);
             // console.log('potentialPlants resp: ', potentialPlants)
             const plants = potentialPlants.slice(0,100);
-            res.status(200).json(Plants);
+            res.status(200).json(plants);
         })
     }
     
