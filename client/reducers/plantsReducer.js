@@ -25,7 +25,7 @@ const plantsReducer = (state=initialState, action) => {
   switch(action.type) {
     case SUBMIT_SELECTION:
       const arrayOfPlants = action.payload;
-      // console.log('plantsReducer: arrayOfPlants - ', arrayOfPlants[0])
+      console.log('plantsReducer: arrayOfPlants - ', arrayOfPlants[0])
       return {...state, arrayOfPlants};
 
     default:

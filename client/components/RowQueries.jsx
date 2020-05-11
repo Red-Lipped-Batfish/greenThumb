@@ -10,17 +10,16 @@
  */
 
 import React, { Component } from 'react';
-import { connect } from 'react-redux';
+import ColumnCards from './ColumnCards.jsx'
 
 
 const RowQueries = (props) => {
 
-
-return (
-<div className="row-cards-query">
-  <ColumnCards cards={props.columnCards} />
-</div>
-  )
+  return (
+  <div className="row-cards-query">
+    <ColumnCards columnCards={props.columnCards} />
+  </div>
+    )
 }
 
 export default RowQueries;
