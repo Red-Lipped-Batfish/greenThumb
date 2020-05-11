@@ -11,7 +11,7 @@ router.get('/getAPlant', plantController.findAPlant, (req, res) => {
     return res.status(200).send('Got a plant');
 })
 
-router.get('/getManyPlants', plantController.findPotentialPlants, (req, res) => {
+router.get('/getManyPlants', plantController.findManyPlants, (req, res) => {
     return status(200).send('Got all plants');
 })
 module.exports = router;
