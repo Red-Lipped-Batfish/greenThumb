@@ -22,19 +22,19 @@
             <p align="left">Create a shelf of all the plants you are looking after!</p>
             <p></p>
           
-            <label for="name"><strong>Name</strong></label>
+            <label htmlFor="name"><strong>Name</strong></label>
             <br />
             <input className="signup" type="text" required />
             <p></p>
-            <label for="email"><strong>Email Address</strong></label>
+            <label htmlFor="email"><strong>Email Address</strong></label>
             <br />
             <input className="signup" type="text" required />
             <p></p>
-            <label for="username"><strong>Username</strong></label>
+            <label htmlFor="username"><strong>Username</strong></label>
             <br />
             <input className="signup" type="text" required /> 
             <p></p>
-            <label for="password"><strong>Password</strong></label>
+            <label htmlFor="password"><strong>Password</strong></label>
             <br />
             <input className="signup" type="text" required />
             <p></p>

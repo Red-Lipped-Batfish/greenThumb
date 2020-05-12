@@ -39,11 +39,19 @@ class PlantShelf extends Component {
             </div>
             <hr />
             <strong>Details</strong>
-              <p>drought_tolerance</p>
-              <p>resprout_ability</p>
-              <p>growth_rate</p>
-              <p>lifespan</p>
-              <p>bloom_period</p>
+              <p>Seed period begins: </p>
+              <p>Seed period ends: </p>
+              <p>Moisture use: </p>
+              <p>Drought tolerance: </p>
+              <p>PH maximum: </p>
+              <p>PH minimum: </p>
+              <p>Resprout ability: </p>
+              <p>Shade tolerance: </p>
+              <p>Bloom period: </p>
+              <p>Commercial availability: </p>
+              <p>Growth rate: </p>
+              <p>lifespan: </p>
+              <p>Mature height: </p>
             <hr />
             <strong>Personal Notes</strong>
             <p>This plant was super easy to grow. Really fast growth so probably don't need to buy as many seedlings next time (2-3 packets?). Would grow again! </p>
@@ -57,11 +65,19 @@ class PlantShelf extends Component {
             </div>
             <hr />
             <strong>Details</strong>
-              <p>drought_tolerance</p>
-              <p>resprout_ability</p>
-              <p>growth_rate</p>
-              <p>lifespan</p>
-              <p>bloom_period</p>
+             <p>Seed period begins: </p>
+              <p>Seed period ends: </p>
+              <p>Moisture use: </p>
+              <p>Drought tolerance: </p>
+              <p>PH maximum: </p>
+              <p>PH minimum: </p>
+              <p>Resprout ability: </p>
+              <p>Shade tolerance: </p>
+              <p>Bloom period: </p>
+              <p>Commercial availability: </p>
+              <p>Growth rate: </p>
+              <p>lifespan: </p>
+              <p>Mature height: </p>
             <hr />
             <strong>Personal Notes</strong>
             <p>Plant was kind of annoying - thought I could make it work but it really requires too much maintenance. Note to self: Don't attempt it again!</p>
@@ -75,11 +91,19 @@ class PlantShelf extends Component {
               </div>
             <hr />
             <strong>Details</strong>
-              <p>drought_tolerance</p>
-              <p>resprout_ability</p>
-              <p>growth_rate</p>
-              <p>lifespan</p>
-              <p>bloom_period</p>
+              <p>Seed period begins: </p>
+              <p>Seed period ends: </p>
+              <p>Moisture use: </p>
+              <p>Drought tolerance: </p>
+              <p>PH maximum: </p>
+              <p>PH minimum: </p>
+              <p>Resprout ability: </p>
+              <p>Shade tolerance: </p>
+              <p>Bloom period: </p>
+              <p>Commercial availability: </p>
+              <p>Growth rate: </p>
+              <p>lifespan: </p>
+              <p>Mature height: </p>
             <hr />
             <strong>Personal Notes</strong>
             <p>Currently have three growing in the garden on left side. Waiting for results - looks promising so far!</p>

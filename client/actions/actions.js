@@ -14,7 +14,7 @@ import {SUBMIT_SELECTION} from './actionTypes.js';
 
 
 export const submitSelection = (data) => {
-  // console.log('actions: submitSelection - ', data)
+  console.log('actions: submitSelection - ', data[0])
   return {
     type: SUBMIT_SELECTION,
     payload: data }
