@@ -24,6 +24,15 @@ To access server, run the following in your terminal. Upon saving, the page shou
 npm run dev
 ```
 
+## Using the MongoDB Database
+Add your own Mongo URI to the config/config.env file
+
+```
+PORT=3000
+
+MONGO_URI = 'mongodb+srv://YOUR_USERNAME:YOUR_PASSWORD@cluster0-e8abe.mongodb.net/test?retryWrites=true&w=majority'
+
+```
 
 ## Built With
 
