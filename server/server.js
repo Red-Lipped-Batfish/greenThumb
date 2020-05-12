@@ -1,10 +1,13 @@
 const express = require('express');
 const path = require('path');
 const bodyParser = require('body-parser');
+const dotenv = require('dotenv');
+
+dotenv.config({ path: path.resolve(__dirname, '../config/config.env') });
 
 const app = express();
 
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 const routes = require('./routes/api');
 
 app.use(bodyParser.json());
