@@ -8,6 +8,7 @@ module.exports = {
     node: true,
   },
   rules: {
+    'no-await-in-loop': 'off',
     'no-param-reassign': 'off',
     'import/extensions': 'off',
     'jsx-a11y/interactive-supports-focus': 'off',

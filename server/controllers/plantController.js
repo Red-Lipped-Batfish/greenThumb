@@ -10,10 +10,10 @@ async function getPlantsInfo() {
       `https://trefle.io/api/plants/?token=NGI4S1VkZzBtOUdOMGZ6TEsydjNQUT09&complete_data=true&page=${pageNumber}`
     );
     if (response.ok) {
-      let json = await response.json();
+      const json = await response.json();
       resultArray = resultArray.concat(json);
     } else {
-      alert('HTTP-Error: ' + response.status);
+      console.log('plantController Error: ', response.status);
     }
   }
 
@@ -24,8 +24,8 @@ async function getPlantsInfo() {
     if (response.ok) {
       const resultObj = {};
 
-      let json = await response.json();
-      let species = json.main_species;
+      const json = await response.json();
+      const species = json.main_species;
       resultObj.id = json.id;
       if (json.common_name) {
         resultObj.common_name = json.common_name;
